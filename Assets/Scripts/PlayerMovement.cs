@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float maxOxygen = 500f;
+    public float currentOxygen;
+
+    public OxygenController oxygenController;
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -34,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        currentOxygen = maxOxygen;
+        oxygenController.SetMaxOxygen(maxOxygen);
+
         readyToJump = true;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -47,6 +56,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentOxygen > 0){
+            currentOxygen -= 1f * Time.deltaTime;
+        }
+
+        oxygenController.SetOxygen(currentOxygen);
+
         MyInput();
         SpeedControl();
 
