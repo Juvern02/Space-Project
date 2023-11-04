@@ -8,14 +8,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public float maxOxygen = 500f;
     public float currentOxygen;
+    public float sprintSpeed;
+    public float walkSpeed;
 
     public OxygenController oxygenController;
 
     [Header("Movement")]
     public float moveSpeed;
-
     public float groundDrag;
-
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("GroundCheck")]
     public float playerHeight;
@@ -40,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        sprintSpeed = (float)(moveSpeed * 1.5);
+        walkSpeed = moveSpeed;
         currentOxygen = maxOxygen;
         oxygenController.SetMaxOxygen(maxOxygen);
 
@@ -85,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+        if (Input.GetKey(sprintKey))
+            moveSpeed = sprintSpeed;
+        else
+            moveSpeed = walkSpeed;
 
     }
     
