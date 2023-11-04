@@ -120,4 +120,9 @@ public class PlayerMovement : MonoBehaviour
     {
         readyToJump = true;
     }
+
+    public void IncreaseOxygen(){
+        currentOxygen = maxOxygen;
+        oxygenController.SetOxygen(currentOxygen);
+    }
 }
