@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -59,8 +60,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentOxygen > 0){
-            currentOxygen -= 1f * Time.deltaTime;
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "OutsideSpaceShip"){
+            if (currentOxygen > 0){
+                currentOxygen -= 1f * Time.deltaTime;
+            }
         }
 
         oxygenController.SetOxygen(currentOxygen);
