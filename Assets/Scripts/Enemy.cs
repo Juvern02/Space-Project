@@ -77,12 +77,11 @@ public class Enemy : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-        playerMovement.damagePlayer(20f);
 
         if (!alreadyAttacked){
 
             // Attack code here
-
+            playerMovement.damagePlayer(20f);
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
