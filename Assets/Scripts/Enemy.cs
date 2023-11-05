@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
+    public Health playerHealth;
+    public PlayerMovement playerMovement;
 
     //Patroling
     public Vector3 walkPoint;
@@ -75,7 +77,8 @@ public class Enemy : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-        
+        playerMovement.damagePlayer(20f);
+
         if (!alreadyAttacked){
 
             // Attack code here

@@ -8,11 +8,14 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     public float maxOxygen = 500f;
+    public float maxHealth = 200f;
     public float currentOxygen;
+    public float currentHealth;
     public float sprintSpeed;
     public float walkSpeed;
 
     public OxygenController oxygenController;
+    public Health playerHealth;
 
     [Header("Movement")]
     public float moveSpeed;
@@ -46,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
         walkSpeed = moveSpeed;
         currentOxygen = maxOxygen;
         oxygenController.SetMaxOxygen(maxOxygen);
+        currentHealth = maxHealth;
+        playerHealth.SetMaxHealth(maxHealth);
 
         readyToJump = true;
         rb = GetComponent<Rigidbody>();
@@ -65,6 +70,11 @@ public class PlayerMovement : MonoBehaviour
             if (currentOxygen > 0){
                 currentOxygen -= 1f * Time.deltaTime;
             }
+        }
+
+        if (currentScene.name == "InsideSpaceShip" && playerHealth.currentHealth < 200f )
+        {
+            playerHealth.currentHealth += 1f * Time.deltaTime;
         }
 
         oxygenController.SetOxygen(currentOxygen);
@@ -135,5 +145,10 @@ public class PlayerMovement : MonoBehaviour
     public void IncreaseOxygen(){
         currentOxygen = maxOxygen;
         oxygenController.SetOxygen(currentOxygen);
+    }
+
+    public void damagePlayer(float damage)
+    {
+        playerHealth.damageUnit(damage);
     }
 }
