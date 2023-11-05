@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2d43c1ae260925c449a56e4c6173010e
   - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: 1329d780c7af5c94bb46379323c3a2b6
+  - enabled: 1
     path: Assets/Scenes/InsideSpaceShip.unity
     guid: e8cf1d29775c7e24f9dd35148a6437c0
   - enabled: 1
