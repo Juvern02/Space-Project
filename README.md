@@ -16,4 +16,5 @@ Gather missing items to repair the spaceship. And Avoid the creepy creatures<br>
 ===================================<br>
 Controls:<br><br>
 Movement: WASD<br><br>
+Jump : SPACE<br><br>
 Interacr: E
