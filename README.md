@@ -13,5 +13,5 @@ before their last reserves of oxygen run
 out?<br>
 ===================================<br>
 Gather missing items to repair the spaceship. And Avoid the creepy creatures<br>
-Movement: WASD
+Movement: WASD<br>
 Interacr: E
