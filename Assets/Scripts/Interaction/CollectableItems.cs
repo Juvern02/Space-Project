@@ -15,22 +15,6 @@ public class CollectableItems : MonoBehaviour, IInteractable
     inventory.Add(item);
     
     Destroy(gameObject);
-    
-    if (inventory != null)
-        {
-            // Access and print the items in the inventory list
-            List<InventoryItem> items = inventory.inventory;
-
-            foreach (InventoryItem item in items)
-            {
-                Debug.Log("Item Name: " + item);
-                // Print other properties as needed.
-            }
-        }
-        else
-        {
-            Debug.LogError("InventorySystem not found in the scene.");
-        }
 
 
     return true;

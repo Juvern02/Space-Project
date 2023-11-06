@@ -7,8 +7,6 @@ public class InventorySystem : MonoBehaviour
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
     internal static object current;
 
-    public event System.Action onInventoryChangedEvent;
-
 
     public List<InventoryItem> inventory {get; private set;}
 
@@ -26,7 +24,6 @@ public class InventorySystem : MonoBehaviour
     }
 
     public void Add(InventoryItemData data){
-        onInventoryChangedEvent();
         if (m_itemDictionary.TryGetValue(data, out InventoryItem value)){
             value.AddToStack();
         }
@@ -38,7 +35,6 @@ public class InventorySystem : MonoBehaviour
     }
 
     public void Remove(InventoryItemData data){
-        onInventoryChangedEvent();
         if (m_itemDictionary.TryGetValue(data, out InventoryItem value)){
             value.RemoveFromStack();
 
