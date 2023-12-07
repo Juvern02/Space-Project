@@ -2054,7 +2054,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
-  sightRange: 100
+  sightRange: 50
   attackRange: 2
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -2533,7 +2533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630676510}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.040440984, y: 0.0000000021490378, z: -8.698037e-11, w: 0.9991819}
+  m_LocalRotation: {x: 0.040440984, y: -0.0000000021490387, z: 8.69804e-11, w: 0.9991819}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2617,7 +2617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698241784}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.021112617, y: -0.000000017437012, z: 3.6822304e-10, w: 0.99977714}
+  m_LocalRotation: {x: 0.021112619, y: 0.000000017136097, z: -3.6186848e-10, w: 0.99977714}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2698,7 +2698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698728228}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.021112625, y: -0.000000034723247, z: 7.332623e-10, w: 0.99977714}
+  m_LocalRotation: {x: 0.021112625, y: 0.00000003442232, z: -7.269075e-10, w: 0.99977714}
   m_LocalPosition: {x: 0, y: -373.25168, z: 461.2812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4363,7 +4363,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
-  sightRange: 100
+  sightRange: 50
   attackRange: 2
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -4931,7 +4931,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
-  sightRange: 100
+  sightRange: 50
   attackRange: 2
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -6850,7 +6850,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
-  sightRange: 100
+  sightRange: 50
   attackRange: 2
   playerInSightRange: 0
   playerInAttackRange: 0
