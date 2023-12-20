@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "OutsideSpaceShip"){
+        if (currentScene.name == "OutsideSpaceShip" || currentScene.name == "LunarLandscape3D"){
             if (currentOxygen > 0){
                 currentOxygen -= 1f * Time.deltaTime;
             }
