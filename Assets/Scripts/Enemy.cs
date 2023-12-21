@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,7 +11,7 @@ public class Enemy : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public Health playerHealth;
-    public PlayerMovement playerMovement;
+    public ThirdPersonController thirdPersonController;
 
     //Patroling
     public Vector3 walkPoint;
@@ -26,7 +27,7 @@ public class Enemy : MonoBehaviour
     public bool playerInSightRange, playerInAttackRange;
 
     private void Awake() {
-        player = GameObject.Find("PlayerObject").transform;
+        player = GameObject.Find("Skeleton").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -81,7 +82,7 @@ public class Enemy : MonoBehaviour
         if (!alreadyAttacked){
 
             // Attack code here
-            playerMovement.damagePlayer(20f);
+            thirdPersonController.damagePlayer(20f);
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }

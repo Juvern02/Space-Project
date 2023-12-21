@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - SF_Door
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - pushable
   - Water
   - UI
   - whatIsGround
