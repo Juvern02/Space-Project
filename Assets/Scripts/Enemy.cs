@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
     public Health playerHealth;
     public ThirdPersonController thirdPersonController;
 
+    public bool PlayerInAttackRange = false;
+    public bool PlayerPatroling = false;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -42,6 +45,8 @@ public class Enemy : MonoBehaviour
     }
 
     private void Patroling(){
+        PlayerInAttackRange = false;
+        PlayerPatroling = true;
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -69,11 +74,14 @@ public class Enemy : MonoBehaviour
     }
 
     private void ChasePlayer(){
+        PlayerPatroling = true;
+        PlayerInAttackRange = false;
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer(){
-
+        PlayerPatroling = false;
+        PlayerInAttackRange = true;
         // Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
