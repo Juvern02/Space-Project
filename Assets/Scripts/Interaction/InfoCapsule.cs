@@ -1,14 +1,19 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class InfoCapsule : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     public string InteractionPrompt => _prompt;
 
+    public GameObject playerCam;
+    public GameObject cutSceneCam;
     public TextMeshPro[] textArray;
     private int currentTextIndex = 0;
+    public GameObject[] timelines;
+    private int currentTimeLineIndex = 0;
 
     public void Start()
     {
@@ -16,6 +21,8 @@ public class InfoCapsule : MonoBehaviour, IInteractable
         {
             textArray[i].gameObject.SetActive(false);
         }
+        timelines[currentTimeLineIndex].SetActive(false);
+        cutSceneCam.SetActive(false);
     }
 
     public bool Interact(Interactor interactor)
@@ -33,6 +40,15 @@ public class InfoCapsule : MonoBehaviour, IInteractable
 
     private void DisplayCurrentText()
     {
+        if (currentTextIndex == 0 && currentTimeLineIndex < timelines.Length)
+        {
+            playerCam.SetActive(false);
+            cutSceneCam.SetActive(true);
+            playerCam.SetActive(true);
+            timelines[currentTimeLineIndex].SetActive(true);
+            Invoke("SwitchtoPlayerCam", 5f);
+
+        }
         if (currentTextIndex >= 0 && currentTextIndex < textArray.Length)
         {
             for (int i = 0; i < textArray.Length; i++)
@@ -47,5 +63,12 @@ public class InfoCapsule : MonoBehaviour, IInteractable
                 }
             }
         }
+    }
+    
+    private void SwitchtoPlayerCam()
+    {
+        cutSceneCam.SetActive(false);
+        timelines[currentTimeLineIndex].SetActive(false);
+        playerCam.SetActive(true);
     }
 }
