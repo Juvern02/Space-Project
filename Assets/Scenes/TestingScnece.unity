@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 297098016}
-  m_IndirectSpecularColor: {r: 0.040526807, g: 0.038842477, b: 0.040977232, a: 1}
+  m_IndirectSpecularColor: {r: 0.040560618, g: 0.038829736, b: 0.041005395, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3650,7 +3650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &869901440
 Transform:
   m_ObjectHideFlags: 0
@@ -3688,7 +3688,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f35383bc9e18b4381af109e7608ac5d9, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9592,6 +9591,8 @@ MonoBehaviour:
     m_Bits: 256
   playerHealth: {fileID: 879152143}
   thirdPersonController: {fileID: 1210823258}
+  PlayerInAttackRange: 0
+  PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
@@ -11914,8 +11915,8 @@ GameObject:
   - component: {fileID: 1210823255}
   - component: {fileID: 1210823261}
   - component: {fileID: 1210823265}
-  - component: {fileID: 1210823264}
-  - component: {fileID: 1210823263}
+  - component: {fileID: 1210823267}
+  - component: {fileID: 1210823266}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -12189,58 +12190,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebb24e883ab51f4ca53a3d86152f58c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushLayers:
-    serializedVersion: 2
-    m_Bits: 8
-  canPush: 1
-  strength: 1.1
---- !u!114 &1210823263
+--- !u!114 &1210823265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210823253}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65916af75af17c6429f0d4b3aa1b1aa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4000d1c93c5c0d948ad75b0d39225287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityDuration: 10
-  duration: 3
-  scaleFactor: 6
-  curve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1210823264
+--- !u!114 &1210823266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210823253}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aff09709ac513148b7c75f6e5c78f3e, type: 3}
   m_Name: 
@@ -12272,7 +12241,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1210823265
+--- !u!114 &1210823267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12281,9 +12250,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1210823253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4000d1c93c5c0d948ad75b0d39225287, type: 3}
+  m_Script: {fileID: 11500000, guid: 65916af75af17c6429f0d4b3aa1b1aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityDuration: 10
+  duration: 3
+  scaleFactor: 6
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1238189613
 GameObject:
   m_ObjectHideFlags: 0
@@ -14483,6 +14479,8 @@ MonoBehaviour:
     m_Bits: 256
   playerHealth: {fileID: 879152143}
   thirdPersonController: {fileID: 1210823258}
+  PlayerInAttackRange: 0
+  PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
@@ -17252,6 +17250,8 @@ MonoBehaviour:
     m_Bits: 256
   playerHealth: {fileID: 879152143}
   thirdPersonController: {fileID: 1210823258}
+  PlayerInAttackRange: 0
+  PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2
@@ -18116,6 +18116,8 @@ MonoBehaviour:
     m_Bits: 256
   playerHealth: {fileID: 879152143}
   thirdPersonController: {fileID: 1210823258}
+  PlayerInAttackRange: 0
+  PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 1
   timeBetweenAttacks: 2

@@ -77,11 +77,11 @@ public class Inventory : MonoBehaviour
     //method to setActive ability scripts for items that are in inventory
     void EnableAbilityScripts(Item item)
     {
-        if (item.itemName == "Cube")
+        if (item.itemName == "speed_ability")
         {
         //    Debug.Log("Enable Soda ability");
             SpeedUpScript.enabled = true;
-        } else if (item.itemName == "Capsule")
+        } else if (item.itemName == "jump_ability")
         {
         //    Debug.Log("Enable Pill ability");
             JumpHighScript.enabled = true;
@@ -90,12 +90,12 @@ public class Inventory : MonoBehaviour
 
     void DisableAbilityScripts(Item item)
     {
-        if (item.itemName == "Cube")
+        if (item.itemName == "speed_ability")
         {
         //    Debug.Log("Disable Soda ability");
             SpeedUpScript.enabled = false;
         }
-        else if (item.itemName == "Capsule")
+        else if (item.itemName == "jump_ability")
         {
         //    Debug.Log("Disable Pill ability");
             JumpHighScript.enabled = false;
@@ -173,11 +173,11 @@ public class Inventory : MonoBehaviour
     {
         Item itemToCheck = inventoryList[i];
 
-        if (itemToCheck.itemName == "Cube")
+        if (itemToCheck.itemName == "speed_ability")
         {
           //  Debug.Log("Speed up");
             SpeedUpScript.ActivateSpeedUp();
-        } else if (itemToCheck.itemName == "Capsule")
+        } else if (itemToCheck.itemName == "jump_ability")
         {
             JumpHighScript.ActivateJumpHigh();
           //  Debug.Log("Super Jump");
