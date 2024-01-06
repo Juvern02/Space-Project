@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
 {
     public float currentHealth;
     public Slider slider;
-    // Start is called before the first frame update
+
 
     public void SetMaxHealth(float Health)
     {
