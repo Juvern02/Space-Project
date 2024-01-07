@@ -23,5 +23,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestingScnece.unity
     guid: 3ccdc92c37a5d4a47ab34585969ab7e3
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 42e173060b4e7f34f92d9c15f4a2840d
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 42980a476ffa45e428c1e0b4685585e8
+  - enabled: 1
+    path: Assets/Scenes/Puzzle 3.unity
+    guid: ace4e8cebdb598b45af1a1a477bd1343
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
