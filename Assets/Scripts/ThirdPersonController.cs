@@ -177,16 +177,20 @@ namespace StarterAssets
             if (currentScene.name == "OutsideSpaceShip" || currentScene.name == "TestingScnece"){
                 if (currentOxygen > 0){
                     currentOxygen -= 1f * Time.deltaTime;
+                    isDead = false;
                 } 
-                else if(currentOxygen <= 0 && !isDead) {
+                
+                if(currentOxygen <= 0 && !isDead) {
                     isDead = true;
-                    Debug.Log("Dead");
+                    //Debug.Log("Dead");
+                    Debug.Log("oxygen decreased. Current oxygen: " + playerHealth.slider.value);
                     SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("GameOver");
                 }
-                if(playerHealth.currentHealth <= 0){
+                else if(playerHealth.slider.value <= 0 && !isDead){
                     isDead = true;
-                    Debug.Log("Dead");
+                    Debug.Log("Health decreased. Current Health: " + playerHealth.slider.value);
+                    //Debug.Log("Dead");
                     SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("GameOver");
                 }
@@ -456,7 +460,7 @@ namespace StarterAssets
         public void damagePlayer(float damage)
         {
             playerHealth.damageUnit(damage);
-            playerHealth.currentHealth = playerHealth.slider.value;
+            //currentHealth = playerHealth.slider.value;
         }
     }
 }

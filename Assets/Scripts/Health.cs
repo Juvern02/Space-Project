@@ -16,6 +16,14 @@ public class Health : MonoBehaviour
     }
     public void damageUnit(float damage)
     {
-        if(slider.value > 0) { slider.value -= damage; }
+        if (slider.value > 0)
+        {
+            slider.value -= damage;
+            //Debug.Log("Health decreased. Current Health: " + slider.value);
+        }
+        // else
+        // {
+        //     Debug.Log("Health is already zero or negative.");
+        // }
     }
 }
