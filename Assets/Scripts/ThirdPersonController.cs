@@ -107,6 +107,7 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+        private bool isDead;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -176,8 +177,21 @@ namespace StarterAssets
             if (currentScene.name == "OutsideSpaceShip" || currentScene.name == "TestingScnece"){
                 if (currentOxygen > 0){
                     currentOxygen -= 1f * Time.deltaTime;
+                } 
+                else if(currentOxygen <= 0 && !isDead) {
+                    isDead = true;
+                    Debug.Log("Dead");
+                    SceneManagerScript sceneManager = new SceneManagerScript();
+                    sceneManager.LoadScene("GameOver");
+                }
+                if(playerHealth.currentHealth <= 0){
+                    isDead = true;
+                    Debug.Log("Dead");
+                    SceneManagerScript sceneManager = new SceneManagerScript();
+                    sceneManager.LoadScene("GameOver");
                 }
             }
+
 
             if (currentScene.name == "InsideSpaceShip" && playerHealth.currentHealth < 200f )
             {
@@ -442,6 +456,7 @@ namespace StarterAssets
         public void damagePlayer(float damage)
         {
             playerHealth.damageUnit(damage);
+            playerHealth.currentHealth = playerHealth.slider.value;
         }
     }
 }

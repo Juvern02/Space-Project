@@ -19927,8 +19927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Press e
-  playerCam: {fileID: 0}
-  cutSceneCam: {fileID: 0}
+  playerCam: {fileID: 538799025}
+  cutSceneCam: {fileID: 228698294}
   textArray:
   - {fileID: 1880953705}
   - {fileID: 812035471}
