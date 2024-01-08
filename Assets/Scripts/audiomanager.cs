@@ -12,6 +12,11 @@ public class audiomanager : MonoBehaviour
     public AudioClip background;
     public AudioClip wind;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
         musicSource.clip =background;
