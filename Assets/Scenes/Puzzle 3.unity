@@ -3073,7 +3073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e7dc573d17ea248bef0be428d2c836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: 5a000000
+  correctRotation: 0e010000
   correct: 0
 --- !u!212 &1052608474
 SpriteRenderer:
