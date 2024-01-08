@@ -8184,7 +8184,7 @@ AudioSource:
   m_GameObject: {fileID: 782091659}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1156863271458190455, guid: ff6aa93d3b71c4855a557dc9512eea06, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.173
@@ -21313,6 +21313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752614233}
   - component: {fileID: 1752614232}
+  - component: {fileID: 1752614234}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -21353,6 +21354,21 @@ Transform:
   - {fileID: 2130531338}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752614234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752614231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6afa402e42b44812aa577328e05779f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMixer: {fileID: 0}
+  musicSlider: {fileID: 0}
+  SFXSlider: {fileID: 0}
 --- !u!4 &1773085929 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408396, guid: 3705bd4c1b398ea4ba0413ef903772cc, type: 3}
@@ -24831,9 +24847,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 0}
-  SFXSource: {fileID: 0}
+  SFXSource: {fileID: 2130531336}
   background: {fileID: 0}
-  wind: {fileID: 0}
+  wind: {fileID: 8300000, guid: df81ff13b4e27490a97d74c1f325fe4e, type: 3}
 --- !u!4 &2130531338
 Transform:
   m_ObjectHideFlags: 0
