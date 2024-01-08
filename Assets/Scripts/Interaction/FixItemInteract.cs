@@ -33,7 +33,7 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                 textComponent.gameObject.SetActive(false);
                 imageComponent.gameObject.SetActive(true);
 
-                PlayerPrefs.SetInt("barrierKey", PlayerPrefs.GetInt("barrierKey") + 1);
+                PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
                 Debug.Log(PlayerPrefs.GetInt("barrierKey"));
 
                 /*if (PuzzleGame == 0)

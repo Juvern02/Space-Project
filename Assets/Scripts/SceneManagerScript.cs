@@ -40,5 +40,10 @@ public class SceneManagerScript : MonoBehaviour
         }
         
     }
+    public void SetBarriers()
+    {
+        PlayerPrefs.SetInt("barrierKey", 0);
+        Debug.Log(PlayerPrefs.GetInt("barrierKey"));
+    }
 
 }
