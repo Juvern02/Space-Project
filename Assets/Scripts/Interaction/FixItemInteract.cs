@@ -10,11 +10,16 @@ public class FixItemInteract : MonoBehaviour, IInteractable
     public string itemName;
     public int PuzzleGame;
     [SerializeField] private string _prompt;
-    public SceneManagerScript sceneManager;
+    private SceneManagerScript sceneManager;
     public string InteractionPrompt => _prompt;
     private void Start()
     {
         PlayerPrefs.SetInt("barrierKey", 0);
+        sceneManager = FindFirstObjectByType<SceneManagerScript>();
+        if (sceneManager == null)
+        {
+            Debug.LogError("SceneManagerScript not found in the scene. Make sure to assign it in the Inspector.");
+        }
     }
     public bool Interact(Interactor interactor)
     {
@@ -42,22 +47,22 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                     ActivateProjectorStars();
                 }
 
-                // if (PuzzleGame == 0)
-                // {
-                //     sceneManager.LoadScene("Puzzle");
-                // }
-                // else if (PuzzleGame == 1)
-                // {
-                //     sceneManager.LoadScene("Puzzle 2");
-                // }
-                // else if (PuzzleGame == 2)
-                // {
-                //     sceneManager.LoadScene("Puzzle 3");
-                // }
-                // else if (PuzzleGame == 3)
-                // {
-                //     sceneManager.LoadScene("Puzzle 4");
-                // }
+                if (PuzzleGame == 0)
+                {
+                    sceneManager.LoadScene("Puzzle");
+                }
+                else if (PuzzleGame == 1)
+                {
+                    sceneManager.LoadScene("Puzzle 2");
+                }
+                else if (PuzzleGame == 2)
+                {
+                    sceneManager.LoadScene("Puzzle 3");
+                }
+                else if (PuzzleGame == 3)
+                {
+                    sceneManager.LoadScene("Puzzle 4");
+                }
 
                 return true;
             }

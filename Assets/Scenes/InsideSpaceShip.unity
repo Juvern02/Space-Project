@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -718,7 +718,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1934536174}
   m_SourcePrefab: {fileID: 100100000, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
 --- !u!1001 &53388636
 PrefabInstance:
@@ -2720,7 +2723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &258298420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,6 +3618,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &445980816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+  m_PrefabInstance: {fileID: 1385430694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &447383629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4188,6 +4196,7 @@ MonoBehaviour:
   itemName: generator
   PuzzleGame: 3
   _prompt: Fix Generator!
+  sceneManager: {fileID: 0}
 --- !u!65 &514850260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5307,6 +5316,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
+--- !u!1 &649593192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+  m_PrefabInstance: {fileID: 1058605856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &649593193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649593192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500f63a9477026743946a86537ea76f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Shield Generator
+  PuzzleGame: 1
+  _prompt: Fix Shield Generator
+  sceneManager: {fileID: 258298420}
 --- !u!4 &651486724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -6658,6 +6688,7 @@ MonoBehaviour:
   itemName: shield_generator
   PuzzleGame: 1
   _prompt: Fix Shield Generator
+  sceneManager: {fileID: 0}
 --- !u!65 &909195171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8441,7 +8472,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 649593193}
   m_SourcePrefab: {fileID: 100100000, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
 --- !u!1001 &1062358763
 PrefabInstance:
@@ -9162,6 +9196,7 @@ MonoBehaviour:
   itemName: rotor
   PuzzleGame: 2
   _prompt: Fix Rotor!
+  sceneManager: {fileID: 0}
 --- !u!65 &1155942664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9368,6 +9403,7 @@ MonoBehaviour:
   itemName: battery
   PuzzleGame: 0
   _prompt: Fix Battery!
+  sceneManager: {fileID: 0}
 --- !u!65 &1187857523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11037,7 +11073,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498975580}
   m_SourcePrefab: {fileID: 100100000, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
 --- !u!1001 &1387849816
 PrefabInstance:
@@ -11315,6 +11354,7 @@ MonoBehaviour:
   itemName: battery
   PuzzleGame: 0
   _prompt: Fix Battery!
+  sceneManager: {fileID: 258298420}
 --- !u!4 &1425603271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
@@ -12079,6 +12119,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 460470, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
   m_PrefabInstance: {fileID: 1385430694}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498975580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445980816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500f63a9477026743946a86537ea76f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Generator
+  PuzzleGame: 3
+  _prompt: Fix Generator
+  sceneManager: {fileID: 258298420}
 --- !u!4 &1514488496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
@@ -14326,6 +14382,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1934536173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188452, guid: d78f2ba16003e6e4681b4702d6dcb72e, type: 3}
+  m_PrefabInstance: {fileID: 37287272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1934536174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934536173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500f63a9477026743946a86537ea76f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Rotor
+  PuzzleGame: 2
+  _prompt: Fix Rotor
+  sceneManager: {fileID: 258298420}
 --- !u!4 &1937118789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
