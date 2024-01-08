@@ -10,10 +10,12 @@ public class FixItemInteract : MonoBehaviour, IInteractable
     public string itemName;
     public int PuzzleGame;
     [SerializeField] private string _prompt;
+    private SceneManagerScript sceneManager;
     public string InteractionPrompt => _prompt;
     private void Start()
     {
         PlayerPrefs.SetInt("barrierKey", 0);
+        sceneManager = new SceneManagerScript();
     }
     public bool Interact(Interactor interactor)
     {
@@ -36,26 +38,22 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                 PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
                 Debug.Log(PlayerPrefs.GetInt("barrierKey"));
 
-                /*if (PuzzleGame == 0)
+                if (PuzzleGame == 0)
                 {
-                    SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("Puzzle");
                 }
-                else if(PuzzleGame == 1)
+                else if (PuzzleGame == 1)
                 {
-                    SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("Puzzle 2");
                 }
                 else if (PuzzleGame == 2)
                 {
-                    SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("Puzzle 3");
                 }
                 else if (PuzzleGame == 3)
                 {
-                    SceneManagerScript sceneManager = new SceneManagerScript();
                     sceneManager.LoadScene("Puzzle 4");
-                }*/
+                }
 
                 return true;
             }
