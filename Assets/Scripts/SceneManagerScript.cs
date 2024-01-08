@@ -6,19 +6,23 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     private Transform player;
-    private StarterAssetsInputs starterAssetsInputs;
 
     private void Awake() {
         player = GameObject.Find("PlayerArmature").transform;
-        //starterAssetsInputs = GameObject.Find("PlayerArmature").GetComponent<StarterAssetsInputs>();
 
         if (player == null)
         {
             Debug.Log("PlayerArmature not found in the scene");
         }
-        
+
     }
     public void LoadScene(string sceneName){
+        /*player = GameObject.Find("PlayerArmature").transform;
+        if (player == null)
+        {
+            Debug.Log("PlayerArmature not found in the scene");
+        }*/
+
         if (sceneName == "InsideSpaceShip")
         {
             SetPlayerPosition();
@@ -50,5 +54,4 @@ public class SceneManagerScript : MonoBehaviour
         PlayerPrefs.SetInt("barrierKey", 0);
         Debug.Log(PlayerPrefs.GetInt("barrierKey"));
     }
-
 }

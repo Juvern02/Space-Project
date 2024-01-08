@@ -2677,6 +2677,7 @@ MonoBehaviour:
   itemName: shield_generator
   PuzzleGame: 1
   _prompt: Fix Shield Generator
+  sceneManager: {fileID: 258298420}
 --- !u!1001 &258268601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3881,6 +3882,7 @@ MonoBehaviour:
   itemName: rotor
   PuzzleGame: 2
   _prompt: Fix Rotor!
+  sceneManager: {fileID: 258298420}
 --- !u!4 &468354730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469584, guid: 2216270888a4ced48b33b7b5641611e6, type: 3}
@@ -10833,6 +10835,7 @@ MonoBehaviour:
   itemName: battery
   PuzzleGame: 0
   _prompt: Fix Battery!
+  sceneManager: {fileID: 258298420}
 --- !u!4 &1425603271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
@@ -11612,6 +11615,7 @@ MonoBehaviour:
   itemName: generator
   PuzzleGame: 3
   _prompt: Fix Generator!
+  sceneManager: {fileID: 258298420}
 --- !u!4 &1514488496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}

@@ -19,7 +19,6 @@ public class BarrierController : MonoBehaviour
     void Update()
     {
         int barrierIndex = PlayerPrefs.GetInt("barrierKey");
-        Debug.Log(barrierIndex);
         if (barrierIndex > 0)
         {
             for (int i = 0; i < barrierIndex; i++)

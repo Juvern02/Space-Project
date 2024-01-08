@@ -10,12 +10,11 @@ public class FixItemInteract : MonoBehaviour, IInteractable
     public string itemName;
     public int PuzzleGame;
     [SerializeField] private string _prompt;
-    private SceneManagerScript sceneManager;
+    public SceneManagerScript sceneManager;
     public string InteractionPrompt => _prompt;
     private void Start()
     {
         PlayerPrefs.SetInt("barrierKey", 0);
-        sceneManager = new SceneManagerScript();
     }
     public bool Interact(Interactor interactor)
     {
