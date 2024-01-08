@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BarrierController : MonoBehaviour
 {
+    private bool gameStarted = false;
     public GameObject[] barrier;
     // Start is called before the first frame update
     void Start()
