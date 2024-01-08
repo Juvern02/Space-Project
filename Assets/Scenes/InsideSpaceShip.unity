@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2675,6 +2675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: shield_generator
+  PuzzleGame: 1
   _prompt: Fix Shield Generator
 --- !u!1001 &258268601
 PrefabInstance:
@@ -3910,6 +3911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: rotor
+  PuzzleGame: 2
   _prompt: Fix Rotor!
 --- !u!4 &468354730 stripped
 Transform:
@@ -10936,6 +10938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: battery
+  PuzzleGame: 0
   _prompt: Fix Battery!
 --- !u!4 &1425603271 stripped
 Transform:
@@ -11714,6 +11717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: generator
+  PuzzleGame: 3
   _prompt: Fix Generator!
 --- !u!4 &1514488496 stripped
 Transform:
