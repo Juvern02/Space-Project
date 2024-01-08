@@ -23,6 +23,8 @@ public class PauseMenu : MonoBehaviour
             }
             else{
                 Stop();
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
     }

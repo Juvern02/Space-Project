@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     private Transform player;
+    private StarterAssetsInputs starterAssetsInputs;
 
     private void Awake() {
         player = GameObject.Find("PlayerArmature").transform;
+        //starterAssetsInputs = GameObject.Find("PlayerArmature").GetComponent<StarterAssetsInputs>();
 
         if (player == null)
         {
@@ -20,6 +23,11 @@ public class SceneManagerScript : MonoBehaviour
         {
             SetPlayerPosition();
         }
+        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4")
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
 
         SceneManager.LoadScene(sceneName);
     }
@@ -31,9 +39,6 @@ public class SceneManagerScript : MonoBehaviour
             Vector3 newPosition = new(-44, 1, -50);
             player.position = newPosition;
             Debug.Log("New Position: " + newPosition);
-
-
-            
         }
         else{
             Debug.LogError("player not assigned!");
