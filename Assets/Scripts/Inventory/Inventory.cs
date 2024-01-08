@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -109,66 +110,71 @@ public class Inventory : MonoBehaviour
 
     //abilities triggering
     private void Update()
-    {   //if something in inventory check for keyboard input
+    {       
+        //if something in inventory check for keyboard input
         //convert to events
      
-            if (Keyboard.current.digit1Key.wasPressedThisFrame && inventoryList.Count>0 && !AbilityIsActive)
-            {
-                if (inventoryList[0].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(0);
-                    RemoveItem(0);
-                }                
-                //check which item is slot 0
-                //depending on which item, activate the corresponding ability
-            //    Debug.Log("1 pressed");
+        if (Keyboard.current.digit1Key.wasPressedThisFrame && inventoryList.Count>0 && !AbilityIsActive)
+        {
+            if (inventoryList[0].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(0);
+                RemoveItem(0);
+            }                
+            //check which item is slot 0
+            //depending on which item, activate the corresponding ability
+        //    Debug.Log("1 pressed");
+        }
+        if (Keyboard.current.digit2Key.wasPressedThisFrame && inventoryList.Count>1 && !AbilityIsActive)
+        {
+            if (inventoryList[1].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(1);
+                RemoveItem(1);
             }
-            if (Keyboard.current.digit2Key.wasPressedThisFrame && inventoryList.Count>1 && !AbilityIsActive)
-            {
-                if (inventoryList[1].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(1);
-                    RemoveItem(1);
-                }
+        }
+        if (Keyboard.current.digit3Key.wasPressedThisFrame && inventoryList.Count>2 && !AbilityIsActive)
+        {
+            if (inventoryList[2].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(2);
+                RemoveItem(2);
             }
-            if (Keyboard.current.digit3Key.wasPressedThisFrame && inventoryList.Count>2 && !AbilityIsActive)
-            {
-                if (inventoryList[2].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(2);
-                    RemoveItem(2);
-                }
 
+        }
+        if (Keyboard.current.digit4Key.wasPressedThisFrame && inventoryList.Count>3 && !AbilityIsActive)
+        {
+            if (inventoryList[3].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(3);
+                RemoveItem(3);
             }
-            if (Keyboard.current.digit4Key.wasPressedThisFrame && inventoryList.Count>3 && !AbilityIsActive)
-            {
-                if (inventoryList[3].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(3);
-                    RemoveItem(3);
-                }
 
+        }
+        if (Keyboard.current.digit5Key.wasPressedThisFrame && inventoryList.Count>4 && !AbilityIsActive)
+        {
+            if (inventoryList[4].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(4);
+                RemoveItem(4);
             }
-            if (Keyboard.current.digit5Key.wasPressedThisFrame && inventoryList.Count>4 && !AbilityIsActive)
-            {
-                if (inventoryList[4].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(4);
-                    RemoveItem(4);
-                }
 
+        }
+        if (Keyboard.current.digit6Key.wasPressedThisFrame && inventoryList.Count>5 && !AbilityIsActive)
+        {
+            if (inventoryList[5].itemType == "Ability"){
+                AbilityIsActive = true;
+                CheckWhichAbilityToActivate(5);
+                RemoveItem(5);
             }
-            if (Keyboard.current.digit6Key.wasPressedThisFrame && inventoryList.Count>5 && !AbilityIsActive)
-            {
-                if (inventoryList[5].itemType == "Ability"){
-                    AbilityIsActive = true;
-                    CheckWhichAbilityToActivate(5);
-                    RemoveItem(5);
-                }
 
-            }
-            
-        
+        }
+
+        if (itemsFixed == 4)
+        {
+            ActivateProjectorStars();
+        }
+
     }
 
     void CheckWhichAbilityToActivate(int i)
@@ -207,6 +213,28 @@ public class Inventory : MonoBehaviour
         {
             Debug.LogWarning(itemToFix.itemName + "not found in inventory");
             return false;
+        }
+    }
+
+    private void ActivateProjectorStars()
+    {
+        if (SceneManager.GetActiveScene().name == "InsideSpaceShip"){
+
+            GameObject projectorStars = GameObject.Find("projector stars");
+
+            if (projectorStars != null)
+            {
+                Transform firstChild = projectorStars.transform.GetChild(0);
+
+                if (firstChild != null)
+                {
+                    firstChild.gameObject.SetActive(true);
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Could not find 'projector stars' object.");
+            }
         }
     }
 

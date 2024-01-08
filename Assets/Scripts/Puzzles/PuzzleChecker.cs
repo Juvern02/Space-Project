@@ -33,6 +33,8 @@ public class PuzzleChecker : MonoBehaviour
 
     private void ReturnToShip()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManagerScript sceneManager = new SceneManagerScript();
         sceneManager.LoadScene("InsideSpaceShip");
     }

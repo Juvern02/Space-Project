@@ -42,11 +42,6 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                 PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
                 Debug.Log(PlayerPrefs.GetInt("barrierKey"));
 
-                if (inventory.GetItemsFixed() == 4)
-                {
-                    ActivateProjectorStars();
-                }
-
                 if (PuzzleGame == 0)
                 {
                     sceneManager.LoadScene("Puzzle");
@@ -72,22 +67,5 @@ public class FixItemInteract : MonoBehaviour, IInteractable
         return false;
     }
 
-    private void ActivateProjectorStars()
-    {
-        GameObject projectorStars = GameObject.Find("projector stars");
-
-        if (projectorStars != null)
-        {
-            Transform firstChild = projectorStars.transform.GetChild(0);
-
-            if (firstChild != null)
-            {
-                firstChild.gameObject.SetActive(true);
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Could not find 'projector stars' object.");
-        }
-    }
+    
 }
