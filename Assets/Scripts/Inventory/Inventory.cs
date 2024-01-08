@@ -232,4 +232,8 @@ public class Inventory : MonoBehaviour
         OnInventoryChange?.Invoke(); //null reference check, then invoke event
     }
 
+    public int GetItemsFixed(){
+        return itemsFixed;
+    }
+
 }

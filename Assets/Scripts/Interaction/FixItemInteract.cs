@@ -38,22 +38,27 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                 PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
                 Debug.Log(PlayerPrefs.GetInt("barrierKey"));
 
-                if (PuzzleGame == 0)
+                if (inventory.GetItemsFixed() == 4)
                 {
-                    sceneManager.LoadScene("Puzzle");
+                    ActivateProjectorStars();
                 }
-                else if (PuzzleGame == 1)
-                {
-                    sceneManager.LoadScene("Puzzle 2");
-                }
-                else if (PuzzleGame == 2)
-                {
-                    sceneManager.LoadScene("Puzzle 3");
-                }
-                else if (PuzzleGame == 3)
-                {
-                    sceneManager.LoadScene("Puzzle 4");
-                }
+
+                // if (PuzzleGame == 0)
+                // {
+                //     sceneManager.LoadScene("Puzzle");
+                // }
+                // else if (PuzzleGame == 1)
+                // {
+                //     sceneManager.LoadScene("Puzzle 2");
+                // }
+                // else if (PuzzleGame == 2)
+                // {
+                //     sceneManager.LoadScene("Puzzle 3");
+                // }
+                // else if (PuzzleGame == 3)
+                // {
+                //     sceneManager.LoadScene("Puzzle 4");
+                // }
 
                 return true;
             }
@@ -61,5 +66,24 @@ public class FixItemInteract : MonoBehaviour, IInteractable
         }
 
         return false;
+    }
+
+    private void ActivateProjectorStars()
+    {
+        GameObject projectorStars = GameObject.Find("projector stars");
+
+        if (projectorStars != null)
+        {
+            Transform firstChild = projectorStars.transform.GetChild(0);
+
+            if (firstChild != null)
+            {
+                firstChild.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Could not find 'projector stars' object.");
+        }
     }
 }
