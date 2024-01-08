@@ -184,8 +184,27 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public bool FixItem(string itemName)
+    {
+        // Find the item in the inventory and remove it
+        Item itemToFix = inventoryList.Find(item => item.itemName == itemName);
+
+        if (itemToFix != null)
+        {
+            RemoveItem(inventoryList.IndexOf(itemToFix));
+            Debug.Log(itemToFix.itemName + " Item fixed");
+            return true;
+        }
+        else
+        {
+            Debug.LogWarning(itemToFix.itemName + "not found in inventory");
+            return false;
+        }
+    }
+
+
     //remove items from inventory (after they are used)
-    void RemoveItem(int i) 
+    public void RemoveItem(int i) 
     {
         Item itemToRemove = inventoryList[i];
        
