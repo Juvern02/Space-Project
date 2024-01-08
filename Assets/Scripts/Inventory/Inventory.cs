@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
     public delegate void inventoryDelegate();
     public static event inventoryDelegate OnInventoryChange;
 
+    int itemsFixed = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -193,6 +195,12 @@ public class Inventory : MonoBehaviour
         {
             RemoveItem(inventoryList.IndexOf(itemToFix));
             Debug.Log(itemToFix.itemName + " Item fixed");
+            itemsFixed +=1;
+
+            if(itemsFixed == 4)
+            {
+                Debug.Log("You won!");
+            }
             return true;
         }
         else

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FixItemInteract : MonoBehaviour, IInteractable
@@ -12,7 +13,7 @@ public class FixItemInteract : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        Inventory inventory = interactor.GetComponent<Inventory>(); // Assuming the inventory is on the Interactor's GameObject
+        Inventory inventory = interactor.GetComponent<Inventory>();
 
         if (inventory != null)
         {
@@ -21,10 +22,8 @@ public class FixItemInteract : MonoBehaviour, IInteractable
             {
                 Canvas canvas = GetComponentInChildren<Canvas>();
 
-                // Assuming the Text (TMP) is the first child of the canvas
                 TextMeshProUGUI textComponent = canvas.GetComponentInChildren<TextMeshProUGUI>();
 
-                // Assuming the Image is the second child of the canvas
                 Image imageComponent = canvas.transform.GetChild(1).GetComponent<Image>();
 
                 textComponent.gameObject.SetActive(false);
