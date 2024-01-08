@@ -41,5 +41,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsMenu.unity
     guid: 1d5c7afdaadd7482eb41a3479d702d0f
+  - enabled: 1
+    path: Assets/Scenes/IntroCut.unity
+    guid: 9e19985efc03f48d9a93de6e20ae13ee
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

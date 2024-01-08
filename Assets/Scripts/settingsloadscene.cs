@@ -1,44 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
+// using UnityEngine.SceneManagement;
 
-public class SettingsMenu : MonoBehaviour
-{
+// public class SettingsMenu : MonoBehaviour
+// {
 
-    public GameObject settings;
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P)){
-            if(Paused){
-                Play();
-            }
-            else{
-                Stop();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
-        }
-    }
+//     public GameObject settings;
 
-    void Stop(){
-        settings.SetActive(true);
-        Time.timeScale = 0f;
-        Paused = true;
-    }
+//     void Update()
+//     {
+//         if (Input.GetKeyDown(KeyCode.P)){
+//             if(Paused){
+//                 Play();
+//             }
+//             else{
+//                 Stop();
+//                 Cursor.lockState = CursorLockMode.None;
+//                 Cursor.visible = true;
+//             }
+//         }
+//     }
 
-    public void Play(){
-        settings.SetActive(false);
-        Time.timeScale = 1f;
-        Paused = false;
-    }
+//     void Stop(){
+//         settings.SetActive(true);
+//         Time.timeScale = 0f;
+//         Paused = true;
+//     }
 
-    public void MainMenuButton(){
-        SceneManager.LoadScene("MainMenu");
-    }
+//     public void Play(){
+//         settings.SetActive(false);
+//         Time.timeScale = 1f;
+//         Paused = false;
+//     }
 
-    public void QuitGame(){
-        Application.Quit();
-    }
-}
+//     public void MainMenuButton(){
+//         SceneManager.LoadScene("MainMenu");
+//     }
+
+//     public void QuitGame(){
+//         Application.Quit();
+//     }
+// }
