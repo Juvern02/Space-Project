@@ -41,12 +41,12 @@ public class SceneManagerScript : MonoBehaviour
         {
             SetPlayerPosition();
         }
-        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "SettingsMenu")
+        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "SettingsMenu" ||sceneName == "GameOver")
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-
+        
         SceneManager.LoadScene(sceneName);
     }
 
