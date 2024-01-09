@@ -30,18 +30,6 @@ public class FixItemInteract : MonoBehaviour, IInteractable
             // Call the method in the Inventory script to fix the item
             if (inventory.FixItem(itemName))
             {
-                Canvas canvas = GetComponentInChildren<Canvas>();
-
-                TextMeshProUGUI textComponent = canvas.GetComponentInChildren<TextMeshProUGUI>();
-
-                Image imageComponent = canvas.transform.GetChild(1).GetComponent<Image>();
-
-                textComponent.gameObject.SetActive(false);
-                imageComponent.gameObject.SetActive(true);
-
-                PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
-                Debug.Log(PlayerPrefs.GetInt("barrierKey"));
-
                 if (PuzzleGame == 0)
                 {
                     sceneManager.LoadScene("Puzzle");
@@ -58,6 +46,17 @@ public class FixItemInteract : MonoBehaviour, IInteractable
                 {
                     sceneManager.LoadScene("Puzzle 4");
                 }
+                Canvas canvas = GetComponentInChildren<Canvas>();
+
+                TextMeshProUGUI textComponent = canvas.GetComponentInChildren<TextMeshProUGUI>();
+
+                Image imageComponent = canvas.transform.GetChild(1).GetComponent<Image>();
+
+                textComponent.gameObject.SetActive(false);
+                imageComponent.gameObject.SetActive(true);
+
+                PlayerPrefs.SetInt("barrierKey", PuzzleGame + 1);
+                Debug.Log(PlayerPrefs.GetInt("barrierKey"));
 
                 return true;
             }
