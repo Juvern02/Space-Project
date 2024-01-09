@@ -6,9 +6,16 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     private Transform player;
+    private OpenSceneTracker openSceneTracker;
 
     private void Awake() {
         player = GameObject.Find("PlayerArmature").transform;
+        openSceneTracker = FindObjectOfType<OpenSceneTracker>();
+
+        if (openSceneTracker == null)
+        {
+            Debug.LogError("OpenSceneTracker not found in the scene");
+        }
 
         if (player == null)
         {
@@ -23,6 +30,8 @@ public class SceneManagerScript : MonoBehaviour
         {
             Debug.Log("PlayerArmature not found in the scene");
         }*/
+
+        openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
 
         if (sceneName == "InsideSpaceShip")
         {
@@ -54,5 +63,11 @@ public class SceneManagerScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("barrierKey", 0);
         Debug.Log(PlayerPrefs.GetInt("barrierKey"));
+    }
+
+    public void BackBtn()
+    {
+        string lastSceneName = OpenSceneTracker.Instance.GetLastOpenScene();
+        SceneManager.LoadScene(lastSceneName);
     }
 }
