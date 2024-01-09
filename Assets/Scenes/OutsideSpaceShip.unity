@@ -627,37 +627,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &48324171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48324167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 48324172}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &48324172
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1316,9 +1285,6 @@ PrefabInstance:
       addedObject: {fileID: 1931686544}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1931686543}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1931686542}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -1455,9 +1421,6 @@ PrefabInstance:
       addedObject: {fileID: 73687769}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 73687768}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 73687767}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -1508,37 +1471,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &73687768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73687764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 73687769}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &73687769
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2781,9 +2713,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1248451457}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1248451456}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1248451459}
@@ -4636,9 +4565,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1929625818}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1929625817}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1929625816}
@@ -6836,37 +6762,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &587314671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587314667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 587314672}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &587314672
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7544,9 +7439,6 @@ PrefabInstance:
       addedObject: {fileID: 643018678}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 643018677}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 643018676}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -7597,37 +7489,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &643018677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643018673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 643018678}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &643018678
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10846,9 +10707,6 @@ PrefabInstance:
       addedObject: {fileID: 48324172}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 48324171}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 48324170}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -12687,9 +12545,6 @@ PrefabInstance:
       addedObject: {fileID: 587314672}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 587314671}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 587314670}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -13281,37 +13136,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
   m_PrefabInstance: {fileID: 232523796}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1248451456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248451454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1248451457}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1248451457
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15173,9 +14997,6 @@ PrefabInstance:
       addedObject: {fileID: 1431184357}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1431184356}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1431184355}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -15226,37 +15047,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1431184356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431184352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1431184357}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1431184357
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15749,9 +15539,6 @@ PrefabInstance:
       addedObject: {fileID: 1452640086}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1452640085}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1452640084}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -15802,37 +15589,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1452640085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452640081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1452640086}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1452640086
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16051,9 +15807,6 @@ PrefabInstance:
       addedObject: {fileID: 1453204784}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1453204783}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1453204782}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -16104,37 +15857,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1453204783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453204779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1453204784}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1453204784
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24520,9 +24242,6 @@ PrefabInstance:
       addedObject: {fileID: 1859897220}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1859897219}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1859897218}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -24573,37 +24292,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1859897219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859897215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1859897220}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1859897220
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25812,37 +25500,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1929625817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929625813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1929625818}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1929625818
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25900,37 +25557,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1931686543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931686539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1931686544}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1931686544
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26412,9 +26038,6 @@ PrefabInstance:
       addedObject: {fileID: 1989767825}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1989767824}
-    - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1989767823}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
       insertIndex: -1
@@ -26465,37 +26088,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5be2c6dc7d0cd11418701026bf971b37, type: 3}
---- !u!114 &1989767824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989767820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4631e61e76881c438530470a6457ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 1989767825}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
-  PlayerInAttackRange: 0
-  PlayerPatroling: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 1
-  timeBetweenAttacks: 2
-  sightRange: 50
-  attackRange: 2
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!195 &1989767825
 NavMeshAgent:
   m_ObjectHideFlags: 0

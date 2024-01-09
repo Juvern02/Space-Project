@@ -10,7 +10,7 @@ public class SceneManagerScript : MonoBehaviour
     [SerializeField] private OpenSceneTracker openSceneTracker;
 
     private void Awake() {
-        player = GameObject.Find("PlayerArmature").transform;
+        //player = GameObject.Find("PlayerArmature").transform;
         openSceneTracker = FindFirstObjectByType<OpenSceneTracker>();
 
         if (openSceneTracker == null)
