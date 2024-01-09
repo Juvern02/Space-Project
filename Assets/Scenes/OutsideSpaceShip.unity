@@ -2931,6 +2931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f6d08408e79be4ebb938147a2acc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openSceneTracker: {fileID: 0}
 --- !u!1 &253394673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,6 +4991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f6d08408e79be4ebb938147a2acc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openSceneTracker: {fileID: 401984089}
 --- !u!114 &401984088
 MonoBehaviour:
   m_ObjectHideFlags: 0

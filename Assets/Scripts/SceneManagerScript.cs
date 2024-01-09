@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     private Transform player;
-    private OpenSceneTracker openSceneTracker;
+    
+    [SerializeField] private OpenSceneTracker openSceneTracker;
 
     private void Awake() {
+        player = GameObject.Find("PlayerArmature").transform;
         openSceneTracker = FindFirstObjectByType<OpenSceneTracker>();
 
         if (openSceneTracker == null)
@@ -30,13 +32,16 @@ public class SceneManagerScript : MonoBehaviour
             Debug.Log("PlayerArmature not found in the scene");
         }*/
 
-        //openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
+        if(sceneName == "SettingsMenu")
+        {
+            openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
+        }
 
         if (sceneName == "OutsideSpaceShip")
         {
             SetPlayerPosition();
         }
-        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "settingsMenu")
+        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "SettingsMenu")
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
