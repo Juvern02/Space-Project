@@ -484,6 +484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7168873102751290863, guid: 25025bd451161164b9b62d9fea006fe9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7812201810804958300, guid: 25025bd451161164b9b62d9fea006fe9, type: 3}
       propertyPath: m_Events.m_Events.Array.size
       value: 1
