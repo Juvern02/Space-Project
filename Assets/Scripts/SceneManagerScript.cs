@@ -32,7 +32,7 @@ public class SceneManagerScript : MonoBehaviour
 
         //openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
 
-        if (sceneName == "InsideSpaceShip")
+        if (sceneName == "OutsideSpaceShip")
         {
             SetPlayerPosition();
         }
@@ -49,7 +49,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         if (player != null)
         {
-            Vector3 newPosition = new(-44, 1, -50);
+            Vector3 newPosition = new(525, 5, 175);
             player.position = newPosition;
             Debug.Log("New Position: " + newPosition);
         }
