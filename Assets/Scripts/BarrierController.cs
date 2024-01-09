@@ -6,6 +6,7 @@ public class BarrierController : MonoBehaviour
 {
     private bool gameStarted = false;
     public GameObject[] barrier;
+    public int barrierIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class BarrierController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int barrierIndex = PlayerPrefs.GetInt("barrierKey");
+        barrierIndex = PlayerPrefs.GetInt("barrierKey");
         if (barrierIndex > 0)
         {
             for (int i = 0; i < barrierIndex; i++)

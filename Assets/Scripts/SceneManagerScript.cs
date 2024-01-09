@@ -9,8 +9,7 @@ public class SceneManagerScript : MonoBehaviour
     private OpenSceneTracker openSceneTracker;
 
     private void Awake() {
-        player = GameObject.Find("PlayerArmature").transform;
-        openSceneTracker = FindObjectOfType<OpenSceneTracker>();
+        openSceneTracker = FindFirstObjectByType<OpenSceneTracker>();
 
         if (openSceneTracker == null)
         {
@@ -31,7 +30,7 @@ public class SceneManagerScript : MonoBehaviour
             Debug.Log("PlayerArmature not found in the scene");
         }*/
 
-        openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
+        //openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
 
         if (sceneName == "InsideSpaceShip")
         {

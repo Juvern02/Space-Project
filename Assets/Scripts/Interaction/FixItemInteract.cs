@@ -14,7 +14,6 @@ public class FixItemInteract : MonoBehaviour, IInteractable
     public string InteractionPrompt => _prompt;
     private void Start()
     {
-        PlayerPrefs.SetInt("barrierKey", 0);
         sceneManager = FindFirstObjectByType<SceneManagerScript>();
         if (sceneManager == null)
         {
