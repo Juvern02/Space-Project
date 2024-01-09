@@ -27,7 +27,7 @@ public class SceneManagerScript : MonoBehaviour
         {
             SetPlayerPosition();
         }
-        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4")
+        if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "settingsMenu")
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

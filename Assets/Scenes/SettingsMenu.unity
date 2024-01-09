@@ -559,6 +559,18 @@ MonoBehaviour:
           m_StringArgument: OutsideSpaceShip
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1132113343}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &666232723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,7 +961,7 @@ RectTransform:
   m_GameObject: {fileID: 992469840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4581, y: 1.968, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132113342}
@@ -1103,6 +1115,7 @@ GameObject:
   - component: {fileID: 1132113338}
   - component: {fileID: 1132113343}
   - component: {fileID: 1132113344}
+  - component: {fileID: 1132113345}
   m_Layer: 5
   m_Name: Sliders
   m_TagString: Untagged
@@ -1237,6 +1250,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27f6d08408e79be4ebb938147a2acc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1132113345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132113337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e5341b2b55dd64c930338672f4863a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenuCanvas: {fileID: 0}
 --- !u!1 &1151785846
 GameObject:
   m_ObjectHideFlags: 0
