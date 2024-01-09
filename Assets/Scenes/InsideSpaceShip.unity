@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4196,7 +4196,6 @@ MonoBehaviour:
   itemName: generator
   PuzzleGame: 3
   _prompt: Fix Generator!
-  sceneManager: {fileID: 0}
 --- !u!65 &514850260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5336,7 +5335,6 @@ MonoBehaviour:
   itemName: Shield Generator
   PuzzleGame: 1
   _prompt: Fix Shield Generator
-  sceneManager: {fileID: 258298420}
 --- !u!4 &651486724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 445452, guid: 14f2f01264616214ba79f88c8f46c15f, type: 3}
@@ -6688,7 +6686,6 @@ MonoBehaviour:
   itemName: shield_generator
   PuzzleGame: 1
   _prompt: Fix Shield Generator
-  sceneManager: {fileID: 0}
 --- !u!65 &909195171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9196,7 +9193,6 @@ MonoBehaviour:
   itemName: rotor
   PuzzleGame: 2
   _prompt: Fix Rotor!
-  sceneManager: {fileID: 0}
 --- !u!65 &1155942664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9403,7 +9399,6 @@ MonoBehaviour:
   itemName: battery
   PuzzleGame: 0
   _prompt: Fix Battery!
-  sceneManager: {fileID: 0}
 --- !u!65 &1187857523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9484,7 +9479,7 @@ Transform:
   m_GameObject: {fileID: 1187857520}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540.6653, y: 6.815, z: 167.67}
+  m_LocalPosition: {x: 540.815, y: 6.815, z: 167.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11354,7 +11349,6 @@ MonoBehaviour:
   itemName: battery
   PuzzleGame: 0
   _prompt: Fix Battery!
-  sceneManager: {fileID: 258298420}
 --- !u!4 &1425603271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
@@ -12134,7 +12128,6 @@ MonoBehaviour:
   itemName: Generator
   PuzzleGame: 3
   _prompt: Fix Generator
-  sceneManager: {fileID: 258298420}
 --- !u!4 &1514488496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
@@ -14402,7 +14395,6 @@ MonoBehaviour:
   itemName: Rotor
   PuzzleGame: 2
   _prompt: Fix Rotor
-  sceneManager: {fileID: 258298420}
 --- !u!4 &1937118789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
