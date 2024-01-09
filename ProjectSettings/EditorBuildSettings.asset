@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsMenu.unity
     guid: 1d5c7afdaadd7482eb41a3479d702d0f
+  - enabled: 1
+    path: Assets/Scenes/Outro.unity
+    guid: bf288cc0d36f1df499602024c24a1edd
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
