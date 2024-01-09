@@ -21,7 +21,10 @@ public class InfoCapsule : MonoBehaviour, IInteractable
         {
             textArray[i].gameObject.SetActive(false);
         }
-        timelines[currentTimeLineIndex].SetActive(false);
+        if (timelines.Length > 0)
+        {
+            timelines[currentTimeLineIndex].SetActive(false);
+        }
         cutSceneCam.SetActive(false);
     }
 
