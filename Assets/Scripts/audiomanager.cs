@@ -12,18 +12,9 @@ public class audiomanager : MonoBehaviour
     public AudioClip background;
     public AudioClip wind;
 
-    public static audiomanager instance;
-
     private void Awake()
     {
-        if (instance == null)
-        {       
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
