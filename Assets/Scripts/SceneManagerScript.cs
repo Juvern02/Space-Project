@@ -13,10 +13,10 @@ public class SceneManagerScript : MonoBehaviour
         //player = GameObject.Find("PlayerArmature").transform;
         openSceneTracker = FindFirstObjectByType<OpenSceneTracker>();
 
-        if (openSceneTracker == null)
-        {
-            Debug.LogError("OpenSceneTracker not found in the scene");
-        }
+        // if (openSceneTracker == null)
+        // {
+        //     Debug.LogError("OpenSceneTracker not found in the scene");
+        // }
     }
 
     public void LoadScene(string sceneName){
