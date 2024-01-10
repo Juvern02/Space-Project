@@ -485,7 +485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!136 &34077866
 CapsuleCollider:
@@ -1175,7 +1174,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -1579,7 +1577,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -2053,7 +2050,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -2507,6 +2503,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201911565}
   m_CullTransparentMesh: 1
+--- !u!1 &228320943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
+  m_PrefabInstance: {fileID: 234726113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &228698294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,7 +2815,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
       insertIndex: -1
       addedObject: {fileID: 575232352}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2114411124}
   m_SourcePrefab: {fileID: 100100000, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
 --- !u!1 &239766046
 GameObject:
@@ -3550,7 +3554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!136 &303742036
 CapsuleCollider:
@@ -3938,7 +3941,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 0}
-  thirdPersonController: {fileID: 0}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -4056,7 +4058,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -6905,7 +6906,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!1 &596896294
 GameObject:
@@ -7132,7 +7132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!136 &609903172
 CapsuleCollider:
@@ -7605,7 +7604,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -11830,7 +11828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!1 &1124076565
 GameObject:
@@ -15281,7 +15278,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -15339,7 +15335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!136 &1432319511
 CapsuleCollider:
@@ -15510,7 +15505,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -15823,7 +15817,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -16091,7 +16084,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -17119,15 +17111,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561510508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 606.1, y: -19.3, z: -69.3}
+  m_LocalRotation: {x: -0, y: -0.9565769, z: -0, w: -0.2914801}
+  m_LocalPosition: {x: 93.7, y: -21.669998, z: 85.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 547711039}
   - {fileID: 2122269724}
   m_Father: {fileID: 1971483179}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -213.893, z: 0}
 --- !u!1 &1569215172
 GameObject:
   m_ObjectHideFlags: 0
@@ -22588,7 +22580,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -22867,7 +22858,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxOxygen: 500
-  thirdPersonController: {fileID: 929159808}
   _prompt: Oxygen Capsule
 --- !u!136 &1704635653
 CapsuleCollider:
@@ -24421,7 +24411,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -24527,7 +24516,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -26307,7 +26295,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerHealth: {fileID: 746557727}
-  thirdPersonController: {fileID: 929159808}
   PlayerInAttackRange: 0
   PlayerPatroling: 0
   walkPoint: {x: 0, y: 0, z: 0}
@@ -27153,6 +27140,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
   m_PrefabInstance: {fileID: 234726113}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2114411124
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228320943}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5060444177187149915, guid: 44ef80c52cd185540bd7e9d6cc15ae18, type: 3}
 --- !u!1 &2122269723
 GameObject:
   m_ObjectHideFlags: 0

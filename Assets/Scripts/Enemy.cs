@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public Health playerHealth;
-    public ThirdPersonController thirdPersonController;
+    private ThirdPersonController thirdPersonController;
 
     public bool PlayerInAttackRange = false;
     public bool PlayerPatroling = false;
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void Update() {
-        // check for sight and attack range
+        thirdPersonController = FindFirstObjectByType<ThirdPersonController>();
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 

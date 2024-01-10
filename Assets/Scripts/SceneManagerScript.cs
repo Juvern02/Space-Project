@@ -10,31 +10,15 @@ public class SceneManagerScript : MonoBehaviour
     [SerializeField] private OpenSceneTracker openSceneTracker;
 
     private void Awake() {
-        //player = GameObject.Find("PlayerArmature").transform;
         openSceneTracker = FindFirstObjectByType<OpenSceneTracker>();
-
-        // if (openSceneTracker == null)
-        // {
-        //     Debug.LogError("OpenSceneTracker not found in the scene");
-        // }
     }
 
     public void LoadScene(string sceneName){
-        /*player = GameObject.Find("PlayerArmature").transform;
-        if (player == null)
-        {
-            Debug.Log("PlayerArmature not found in the scene");
-        }*/
-
         if(sceneName == "SettingsMenu")
         {
             openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
         }
 
-        if (sceneName == "OutsideSpaceShip")
-        {
-            SetPlayerPosition();
-        }
         if (sceneName == "Puzzle" || sceneName == "Puzzle 2" || sceneName == "Puzzle 3" || sceneName == "Puzzle 4" || sceneName == "SettingsMenu" ||sceneName == "GameOver")
         {
             Cursor.lockState = CursorLockMode.None;
@@ -42,20 +26,6 @@ public class SceneManagerScript : MonoBehaviour
         }
         
         SceneManager.LoadScene(sceneName);
-    }
-
-    private void SetPlayerPosition()
-    {
-        if (player != null)
-        {
-            Vector3 newPosition = new(525, 5, 175);
-            player.position = newPosition;
-            Debug.Log("New Position: " + newPosition);
-        }
-        else{
-            Debug.LogError("player not assigned!");
-        }
-        
     }
     public void SetBarriers()
     {
