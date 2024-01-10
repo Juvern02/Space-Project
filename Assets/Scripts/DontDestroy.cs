@@ -28,15 +28,18 @@ public class DontDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "MainMenu")
+        {
+            Destroy(gameObject);
+        }
         if (playerHealth.slider.value > 0 && playerOxygen.slider.value > 0)
         {
             DontDestroyOnLoad(gameObject);
-            Debug.Log("Dont Destory " + playerHealth.slider.value + " " + playerOxygen.slider.value);
         }
         else
         {
             Destroy(gameObject);
-            Debug.Log("Destroy " + playerHealth.slider.value + " " + playerOxygen.slider.value);
         }
     }
 }
