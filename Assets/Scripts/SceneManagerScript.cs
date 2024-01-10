@@ -17,12 +17,6 @@ public class SceneManagerScript : MonoBehaviour
         {
             Debug.LogError("OpenSceneTracker not found in the scene");
         }
-
-        if (player == null)
-        {
-            Debug.Log("PlayerArmature not found in the scene");
-        }
-
     }
 
     public void LoadScene(string sceneName){

@@ -4580,7 +4580,7 @@ GameObject:
   - component: {fileID: 514850261}
   - component: {fileID: 514850260}
   - component: {fileID: 514850259}
-  - component: {fileID: 514850258}
+  - component: {fileID: 514850264}
   m_Layer: 7
   m_Name: Fix Generator
   m_TagString: Untagged
@@ -4588,18 +4588,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &514850258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514850257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &514850259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4702,6 +4690,18 @@ Transform:
   - {fileID: 1460162531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514850264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514850257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530415155
 GameObject:
   m_ObjectHideFlags: 0
@@ -7283,7 +7283,7 @@ GameObject:
   - component: {fileID: 909195172}
   - component: {fileID: 909195171}
   - component: {fileID: 909195170}
-  - component: {fileID: 909195169}
+  - component: {fileID: 909195175}
   m_Layer: 7
   m_Name: Fix Shield Generator
   m_TagString: Untagged
@@ -7291,18 +7291,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &909195169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909195168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &909195170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7405,6 +7393,18 @@ Transform:
   - {fileID: 861477300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909195175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909195168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &911593058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 439240, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
@@ -9923,7 +9923,7 @@ GameObject:
   - component: {fileID: 1155942665}
   - component: {fileID: 1155942664}
   - component: {fileID: 1155942663}
-  - component: {fileID: 1155942662}
+  - component: {fileID: 1155942668}
   m_Layer: 7
   m_Name: Fix Rotor
   m_TagString: Untagged
@@ -9931,18 +9931,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1155942662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155942661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1155942663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10045,6 +10033,18 @@ Transform:
   - {fileID: 244255832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155942668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155942661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1168329846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10129,7 +10129,7 @@ GameObject:
   - component: {fileID: 1187857524}
   - component: {fileID: 1187857523}
   - component: {fileID: 1187857522}
-  - component: {fileID: 1187857521}
+  - component: {fileID: 1187857527}
   m_Layer: 7
   m_Name: Fix battery
   m_TagString: Untagged
@@ -10137,18 +10137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1187857521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187857520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1187857522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10251,6 +10239,18 @@ Transform:
   - {fileID: 1284722544}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1187857527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187857520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ed6d8a9976f174eadcf00500f5489b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1188953637
 PrefabInstance:
   m_ObjectHideFlags: 0
