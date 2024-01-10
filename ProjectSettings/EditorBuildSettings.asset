@@ -50,5 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhotosDisplay.unity
     guid: 3f1d8bdcec1438f4f84c3b8bee08af05
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 236570e892f054a87824809fbdc883d9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

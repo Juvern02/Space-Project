@@ -14,7 +14,7 @@ public class SceneManagerScript : MonoBehaviour
     }
 
     public void LoadScene(string sceneName){
-        if(sceneName == "SettingsMenu")
+        if(sceneName == "SettingsMenu" || sceneName == "Tutorial")
         {
             openSceneTracker.SetLastOpenScene(SceneManager.GetActiveScene().name);
         }
