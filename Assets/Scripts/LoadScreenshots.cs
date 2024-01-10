@@ -7,9 +7,9 @@ public class LoadScreenshots : MonoBehaviour
     public RawImage screenshotDisplayPrefab;
     public Transform screenshotContainer;
     public string screenshotFolder = "Screenshots";
-    public float spacing = 5f;
+    public float spacing = 0.7f;
     public float startingY = -5f;
-    public float scaleFactor = 0.7f;
+    public float scaleFactor = 0.1f;
 
     void Start()
     {
