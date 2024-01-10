@@ -18,3 +18,7 @@ Controls:<br><br>
 Movement: WASD<br><br>
 Jump : SPACE<br><br>
 Interacr: E
+Screenshot: O
+Pause Menu: esc
+
+To play the game, you need to press E to gather information. Then find the ship, you will now need to gather the missing pieces to fix the ship solving a piece of puzzle every time. You will neeed to escape the weird creatures and mentain a good oxygen level to stay alive. Dont forget to take photos along the way to take it back to Earth. Once the ship is fully repaied and all levels are acheived you win!
